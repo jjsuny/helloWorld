@@ -1,0 +1,31 @@
+p {
+    color: #a23344;
+    font-size: 1.25em;
+}
+
+h2 {
+    text-decoration: underline;
+    font-family: "Cursive", "Lucida Handwriting", serif
+}
+
+/* Gives the table borders around table and around columns and rows */
+table, th, td {
+    border: 1px solid;
+    border-color: #a23344;
+}
+
+p#special{
+    font-size: 2em;
+    font-weight: bold
+}
+
+/* class to make paragraph smaller */
+p.smaller{
+    font-size:0.5em;
+    color: darkred;
+}
+/* class to resize logo/images */
+img.logo{
+    height: 100px;
+    width: 400px;
+}
