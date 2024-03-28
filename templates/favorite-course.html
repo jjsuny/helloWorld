@@ -1,0 +1,14 @@
+<!-- using base to keep base format of page -->
+{% extends "base.html" %}
+
+{% block page_title %}
+    Favorite Course
+{% endblock %}
+
+{% block page_head %}
+    My Favorite Course
+{% endblock %}
+
+{% block page_content %}
+    <p>You entered your favorite course as: {{ subject }}{{ course_num }}</p>
+{% endblock %}
