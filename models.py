@@ -3,7 +3,7 @@ db = SQLAlchemy()
 
 class Student(db.Model):
     __tablename__ = "student"
-
+#Initialize all variables in the student table
     student_id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(30), nullable=False)
     last_name = db.Column(db.String(50), nullable=False)
@@ -30,7 +30,7 @@ class Student(db.Model):
 
 class Major(db.Model):
     __tablename__ = "major"
-
+#Initialize all variables in the major table
     major_id = db.Column(db.Integer, primary_key=True)
     major = db.Column(db.String(30), nullable=False)
     students = db.relationship('Student', backref='students')

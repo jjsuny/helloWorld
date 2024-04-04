@@ -15,7 +15,7 @@ with app.app_context():
         db.session.add(a_major)
         db.session.commit()
 
-    # Initial loading of students first_name, last_name, major_id, birth_date, is_honors
+    # Initial loading of students first_name, last_name, major_id, birth_date, is_honors, student_email
     students = [
         {'student_id': '1', 'first_name': 'Robert', 'last_name':'Smith', 'major_id':3,
             'birth_date': dt.datetime(2007, 6, 1), 'is_honors':1, 'student_email': 'smith@umd.edu'},
